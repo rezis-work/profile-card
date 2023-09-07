@@ -1,0 +1,284 @@
+:root {
+  --main-bg-color: #19a1ae;
+  --sec-bg-color: #41cbd3;
+  --bg-circle-color: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0) 0.78%,
+    #53ffee 99.94%
+  );
+  --bg-sml-circle-color: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0) 0.78%,
+    #53ffee 99.94%
+  );
+  --h1-color: #2e3349;
+  --text-color: #6b7082;
+
+  --circle-border: 50%;
+}
+
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background-color: var(--main-bg-color);
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+}
+
+.big-text {
+  color: var(--h1-color);
+  text-align: center;
+  font-family: Kumbh Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container-spacer {
+  width: 350px;
+  margin: 0 auto;
+}
+
+/* PROFILE CARD SECTION */
+
+.bg-circle {
+  width: 978px;
+  height: 976px;
+  transform: rotate(-135deg);
+  flex-shrink: 0;
+  border-radius: 978px;
+  opacity: 0.5;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0) 0.78%,
+    #53ffee 99.94%
+  );
+  position: absolute;
+  top: -70%;
+  left: -20%;
+  z-index: -1;
+}
+
+.profile-card {
+  padding-top: 17.3rem;
+  padding-bottom: 17.3rem;
+}
+
+.profile-card-box {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.profile-box-top {
+  width: 350px;
+  height: 140px;
+  flex-shrink: 0;
+  background-color: var(--sec-bg-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  /* display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+}
+
+.buble-parent {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 15.98px;
+}
+
+.buble-parent:nth-child(1) {
+  position: absolute;
+  left: -5px;
+  top: -3px;
+  transform: translate(-5px, -3px);
+}
+
+.buble-parent:nth-child(2) {
+  position: absolute;
+  top: 18px;
+  left: 13px;
+}
+
+.buble-parent:nth-child(3) {
+  position: absolute;
+  left: -5px;
+  top: 43px;
+  transform: translate(-5px, 0);
+}
+
+.buble-parent:nth-child(4) {
+  position: absolute;
+  top: 67px;
+  left: 13px;
+}
+
+.buble-parent:nth-child(5) {
+  position: absolute;
+  left: -5px;
+  top: 93px;
+  transform: translate(-5px);
+}
+
+.buble-parent:nth-child(6) {
+  position: absolute;
+  top: 116px;
+  left: 13px;
+}
+
+.buble-child {
+  width: 29.6px;
+  height: 29.669px;
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  border: none;
+  border-radius: var(--circle-border);
+  background: var(--bg-sml-circle-color);
+  opacity: 0.5;
+}
+
+.profile-box-middle {
+  text-align: center;
+  position: relative;
+  padding-top: 75px;
+}
+
+.card-img {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 96px;
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  transform: translate(-50%, -25%);
+}
+
+.name {
+  margin-bottom: 2.8rem;
+}
+
+.name span {
+  color: #6b7082;
+  margin-left: 8.5px;
+}
+
+.name p {
+  color: #6b7082;
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 13px;
+}
+
+.profile-box-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2.7rem;
+  border-top: 1px solid #e8e9ec;
+}
+
+.profile-count {
+  margin-bottom: 9px;
+}
+
+.count-name {
+  color: var(--text-color);
+  text-align: center;
+  font-family: Kumbh Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+
+.bg-circle2 {
+  width: 978px;
+  height: 976px;
+  flex-shrink: 0;
+  border-radius: 978px;
+  opacity: 0.25;
+  background-color: #53ffee;
+  position: absolute;
+  right: -15%;
+  top: 55%;
+  z-index: -1;
+}
+
+@media (max-width: 56em) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .container-spacer {
+    width: 326px;
+    margin: 0 auto;
+  }
+
+  .profile-card {
+    padding-top: 14.7rem;
+    padding-bottom: 14.6rem;
+  }
+
+  .bg-circle {
+    width: 622px;
+    height: 621px;
+    transform: rotate(-135deg);
+    flex-shrink: 0;
+    border-radius: 978px;
+    opacity: 0.5;
+    background: linear-gradient(
+      180deg,
+      rgba(9, 137, 180, 0) 0.78%,
+      #53ffee 99.94%
+    );
+    position: absolute;
+    top: -41%;
+    left: -120%;
+    /* top: -90%;
+    left: -20%; */
+    z-index: -1;
+  }
+
+  .bg-circle2 {
+    width: 622px;
+    height: 621px;
+    flex-shrink: 0;
+    border-radius: 978px;
+    opacity: 0.25;
+    background: linear-gradient(
+      180deg,
+      rgba(9, 137, 180, 0) 0.78%,
+      #53ffee 99.94%
+    );
+    position: absolute;
+    right: -112%;
+    /* right: -15%; */
+    top: 55%;
+    z-index: -1;
+  }
+}
